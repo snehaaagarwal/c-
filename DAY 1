@@ -1,0 +1,163 @@
+1.//Addition
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"enter a no"<<endl;
+    cin>>a;
+    cout<<"enter a no:";
+    cin>>b;
+    int sum=a+b;
+    cout<<"sum of"<<a<<"and"<<b<<"are"<<sum;
+    return 0;
+}
+
+* Type casting implict(automatic) eg int a = 5;
+double b = a;
+
+explicit(manual conversion) eg double x = 5.7;
+int y = (int)x;
+
+2.//Declare variables
+
+#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    long salary;
+    string name;
+    cout<<"enter age,salary,name";
+    cin>>age>>salary>>name;
+    cout<<"you entered\n"<<age<<"\n"<<salary<<"\n"<<name<<"\n";
+    return 0;
+}
+
+3.//Product 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"enter a no:";
+    cin>>a;
+    cout<<"enter a no:";
+    cin>>b;
+    int product=a*b;
+    cout<<"Product of"<<" "<<a<<" "<<"and"<<" "<<b<<" "<<"are"<<" "<<product;
+    return 0;
+}
+
+* why to use typecasting  Typecasting is about intent, not always output
+implicit → compiler decides
+explicit → you are telling compiler “do this conversion”
+
+4.//If else even and odd
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"enter the no:";
+    cin>>a;
+    if(a%2==0){
+        cout<<"even";
+    }
+    else{
+        cout<<"odd";
+        return 0;
+    }
+}
+
+5.//Positive Negative Zero
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"enter the no:";
+    cin>>a;
+    if(a>0){
+        cout<<"Postive";
+    }
+    else if(a<0){
+        cout<<"Negative";
+    }
+    else{
+        cout<<"Zero";
+    }
+    return 0;
+}
+
+6.//Largest number
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"enter the no:";
+    cin>>a>>b>>c;
+    
+    if(a>b && a>c){
+        cout<<"Largest a";
+    }
+    else if(b>a && b>c){
+        cout<<"Largest b";
+    }
+    else{
+        cout<<"Largest c";
+    }
+    return 0;
+}
+
+7.//Print second largest
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"enter the no:";
+    cin>>a>>b>>c;
+    
+    if((a>b && a<c)||(a>c && a<b)){
+        cout<<"Second largest a";
+    }
+    else if((b>a && b<c)||(b>c && b<a)){
+        cout<<"Second largest b";
+    }
+    else{
+        cout<<"Second largest c";
+    }
+    return 0;
+}
+
+8.//Print numbers 1 to n
+
+#include<iostream>
+using namespace std;
+int main(){
+   int n;
+   
+   cin>>n;
+    
+   for(int i=1;i<=n;i++){
+       cout<<i<<"\n";
+      
+   }
+   return 0;
+}
+
+9.//Sum of first n numbers
+
+#include<iostream>
+using namespace std;
+int main(){
+   int n;
+   int sum=0;
+   cin>>n;
+   for(int i=1;i<=n;i++){
+       sum=sum+i;
+   }
+   cout<<"sum of first"<<" "<<n<<" "<<"is"<<" "<<sum;
+   return 0;
+}
