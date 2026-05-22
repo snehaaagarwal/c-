@@ -1,0 +1,112 @@
+1.//Print name using function
+
+#include<iostream>
+using namespace std;
+void name(){
+cout<<"Sneha";
+}
+int main(){
+    name();
+}
+
+2.//Print 1 to 5
+
+#include<iostream>
+using namespace std;
+void number(){
+for(int i=1;i<=5;i++){
+    cout<<i<<" ";
+}
+}
+int main(){
+    number();
+}
+
+3.//Square of no. through parameter
+
+#include<iostream>
+using namespace std;
+void number(int a){
+    cout<<a*a;
+
+}
+int main(){
+    int a;
+    cin>>a;
+    number(a);
+    return 0;
+}
+
+4.//Sum of two no. through parameter
+
+#include<iostream>
+using namespace std;
+void number(int a,int b){
+    cout<<a+b;
+
+}
+int main(){
+    int a,b;
+    cin>>a>>b;
+    number(a,b);
+    return 0;
+}
+
+5.//whether minor or adult using parameter
+
+#include<iostream>
+using namespace std;
+void age(int a){
+   if(a>=18){
+       cout<<"adult";
+   }
+   else{
+       cout<<"minor";
+   }
+
+}
+int main(){
+    int a;
+    cin>>a;
+    age(a);
+    return 0;
+}
+
+6.//Multiplication using return type
+
+#include<iostream>
+using namespace std;
+int num(int a,int b){
+   return a*b;
+
+}
+int main(){
+    int a,b;
+    cin>>a>>b;
+    int result=num(a,b);
+    cout<<result;
+
+    return 0;
+}
+
+7.//return largest
+
+#include<iostream>
+using namespace std;
+int num(int a,int b){
+  if(a>b){
+      return a;
+  }
+  else{
+      return b;
+  }
+
+}
+int main(){
+    int a,b;
+    cin>>a>>b;
+    int result=num(a,b);
+    cout<<result;
+
+    return 0;
+}
